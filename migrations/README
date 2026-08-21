@@ -1,0 +1,3 @@
+Alembic migration environment.
+
+Business tables and migration revisions are intentionally not included in the initial skeleton.
