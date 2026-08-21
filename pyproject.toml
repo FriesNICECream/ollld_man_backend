@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "ollld-man-backend"
+version = "0.1.0"
+description = "Learning-oriented FastAPI backend skeleton"
+authors = ["FriesNICECream"]
+readme = "README.md"
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = ">=0.115,<1.0"
+uvicorn = { version = ">=0.30,<1.0", extras = ["standard"] }
+sqlalchemy = ">=2.0,<3.0"
+alembic = ">=1.14,<2.0"
+psycopg = { version = ">=3.2,<4.0", extras = ["binary"] }
+pydantic-settings = ">=2.0,<3.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.0,<9.0"
+ruff = ">=0.9,<1.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
